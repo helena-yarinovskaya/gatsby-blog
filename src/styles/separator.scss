@@ -1,0 +1,39 @@
+.separator {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    hr {
+        height: 2px;
+        width: 45px;
+        background: #383A3C;
+        margin: 0;
+    }
+    
+    span {
+        font-size: 24px;
+        line-height: 24px;
+        padding: 0 10px;
+        //position: relative;
+       // display: inline-block;
+        font-weight: bold;
+
+     /*   &::before, 
+        &::after {
+            content: "";
+            position: absolute;
+            height: 14px;
+            border-bottom: 2px solid #383A3C;               
+            width: 45px; 
+            right: 100%;
+            margin-right: 10px; 
+        }
+
+        &::after {               
+            left: 100%;
+            margin-left: 10px;
+        }*/
+    }
+}
+    

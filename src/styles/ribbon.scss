@@ -1,0 +1,71 @@
+.ribbon { 
+  font-size: 24px;
+  font-family: 'Bazar';
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #4b4e4c;  
+  background-color: #fff1ce;
+  position: relative;
+  max-width: 400px;
+  width: 400px;
+  height: 52px;
+  padding: 5px;
+  margin: 0 40px 30px 40px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+
+  &__line {
+    border-bottom: 1px dashed rgba(0,0,0,0.2);
+    background: transparent;
+    height: 0px;
+    width: 100%;
+    margin: 0;   
+  }
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    display: block;
+    bottom: -16px;
+    border: 24px solid #fff1ce;
+    z-index: -1;
+  }
+
+  &::before {
+    left: -32px;
+    border-right-width: 24px;
+    border-left-color: transparent;
+  }
+
+  &::after {
+    right: -32px;
+    border-left-width: 24px;
+    border-right-color: transparent;
+  }
+
+  &__content {
+    text-align: center;
+    line-height: 40px;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      border-style: solid;
+      border-color: #849092 transparent transparent transparent;
+      bottom: -16px;
+    }
+
+    &::before {
+      left: 0;
+      border-width: 16px 0 0 16px;
+    }
+
+    &::after {
+      right: 0;
+      border-width: 16px 16px 0 0;     
+    }    
+  }  
+}
+

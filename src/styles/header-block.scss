@@ -1,0 +1,43 @@
+.header-block {
+  padding: 40px 0 30px 0;
+
+  &__separator {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    hr {
+      height: 2px;
+      width: 45px;
+      background: #383a3c;
+      margin: 0;
+    }
+
+    span {
+      font-size: 24px;
+      line-height: 24px;
+      padding: 0 10px;
+      font-weight: bold;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__title {
+    font-family: 'Bazar';
+    font-weight: bold;
+    font-size: 100px;
+    text-shadow: 1px 2px #fcfaf7, 3px 4px #393a3a;
+  }
+
+  &__subtitle {
+    font-family: 'Oswald';
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}

@@ -1,0 +1,79 @@
+.post {
+  display: flex;
+  margin-bottom: 20px;
+
+  @media (max-width: 740px) {
+    flex-direction: column;
+    &__photo,
+    &__info {
+      width: 100%;
+    }
+  }
+
+  &__photo {
+    width: 326px;
+    height: 248px;
+    padding: 5px;
+    border-radius: 4px;
+    background: #fbfaf6;
+    align-self: start;    
+  }
+
+  &__photo-container {
+    height: 100%;
+    width: 100%;
+    background: #E3DFD7;
+
+    img {
+        margin: 0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
+  }
+
+  &__info {
+    width: 65%;
+    padding: 10px;
+   
+    hr {
+      height: 2px;
+      width: 45px;
+      background: #38353e;
+    }
+
+    @media (max-width: 740px) {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-size: 26px;
+    font-family: 'Roboto Slab';
+    text-transform: capitalize;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  &__additional_info {
+    font-size: 12px;
+    font-weight: bold;
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    font-family: 'Roboto Slab';
+    font-size: 18px;
+  }
+
+  &__expand-btn {
+    font-weight: bold;
+    cursor: pointer;
+  }
+}
