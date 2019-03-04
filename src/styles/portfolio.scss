@@ -1,8 +1,23 @@
+@import './variables.scss';
+
 .portfolio {
   background: url('../images/portfolio-background.png') no-repeat;
   background-size: cover;
   padding: 15px 0;
-  color: #383a3c;
+  color: $main-color;
+
+  &__container {
+    max-width: $content-width;
+    margin: 0 auto;
+
+    @media (max-width: $content-width) {
+      padding: 0 15px;
+    }
+  }
+
+  &__filters {
+    margin-top: 15px;
+  }
 
   &__line {
     border-top: 1px dashed rgba(0, 0, 0, 0.2);
@@ -17,18 +32,14 @@
     font-family: 'Bazar';
     font-weight: bold;
     font-size: 100px;
-    text-shadow: 1px 2px #fcfaf7, 3px 4px #393a3a;
+    text-shadow: 1px 2px $light-shadow-color, 3px 4px $dark-shadow-color;
     text-align: center;
     text-transform: uppercase;
   }
 
-  .container {
-    max-width: 1068px;
-    margin: 0 auto;
-  }
-
   ul {
     list-style: circle !important;
+    margin-bottom: 10px;
   }
 
   &__filter-label {
@@ -41,7 +52,7 @@
   &__tag {
     display: inline-block;
     position: relative;
-    background: #fbfaf6;
+    background: $secondary-light-color;
     height: 26px;
     line-height: 26px;
     margin: 0px 10px 10px 10px;
@@ -60,7 +71,7 @@
       width: 0;
       border: solid;
       border-width: 13px 13px 13px 0 !important;
-      border-color: transparent #fcfaf7 transparent transparent;
+      border-color: transparent $light-shadow-color transparent transparent;
     }
 
     &::after {
@@ -73,21 +84,21 @@
       font-family: 'Roboto Slab';
       font-size: 14px;
       font-weight: bold;
-      padding: 0 10px;
+      padding: 0 5px;
     }
   }
 
   &__photoes-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;   
+    justify-content: space-around;
   }
 
   &__photo-container {
     display: inline-block;
     padding: 0 10px;
-    margin-bottom: 10px;
-    width: 248px;
+    margin-bottom: 15px;
+    width: 264px;
     height: 248px;
     cursor: pointer;
 
@@ -101,16 +112,16 @@
   &__photo {
     width: 100%;
     height: 100%;
-    background: #fbfaf6;
+    background: $secondary-light-color;
     padding: 5px 5px 5px 5px;
     border-radius: 4px;
   }
 
   &__image {
     width: 100%;
-    height: calc(100% - 60px);    
+    height: calc(100% - 60px);
 
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
 
     .gatsby-image-wrapper {
       height: 100%;
@@ -125,15 +136,15 @@
   }
 
   &__image-info {
-    position: relative;  
+    position: relative;
   }
 
   &__label {
     font-family: 'Roboto Slab';
     font-size: 14px;
     font-weight: bold;
-    margin: 30px 0 0 0;    
-    text-align: center;   
+    margin: 30px 0 0 0;
+    text-align: center;
     text-transform: uppercase;
   }
 
@@ -143,27 +154,10 @@
     border-radius: 100%;
     display: inline-block;
     position: absolute;
-    top: -25px;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);
-    background: #fbfaf6;
-    padding: 10px;     
-  }
-
-  &__expand {
-    font-family: 'Oswald';
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px 0 40px 0;
-    cursor: pointer;
-
-    hr {
-      width: 50px;
-      height: 2px;
-      background: #38353e;
-      margin: 0 auto;
-    }
+    background: $secondary-light-color;
+    padding: 10px;
   }
 }

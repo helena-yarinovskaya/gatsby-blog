@@ -1,17 +1,23 @@
+@import './variables.scss';
+
 .ribbon { 
   font-size: 24px;
   font-family: 'Bazar';
   text-transform: uppercase;
   font-weight: 500;
   color: #4b4e4c;  
-  background-color: #fff1ce;
+  background-color: $ribbon-color;
   position: relative;
   max-width: 400px;
   width: 400px;
   height: 52px;
   padding: 5px;
   margin: 0 40px 30px 40px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);  
+
+  @media only screen and (max-width: 600px) {
+    font-size: 18px;
+  } 
 
   &__line {
     border-bottom: 1px dashed rgba(0,0,0,0.2);
@@ -27,7 +33,7 @@
     position: absolute;
     display: block;
     bottom: -16px;
-    border: 24px solid #fff1ce;
+    border: 24px solid $ribbon-color;
     z-index: -1;
   }
 
@@ -46,6 +52,10 @@
   &__content {
     text-align: center;
     line-height: 40px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &::before,
     &::after {

@@ -1,13 +1,19 @@
+@import './variables.scss';
+
 .contact-me {
     background: url('../images/contact-background.png') no-repeat;
     background-size: cover;
-    color: #F6EDD8;
+    color: $secondary-color;
 
     padding: 15px 0;
 
-    .container {  
+    &__container {  
         margin: 0 auto;
-        max-width: 1068px;
+        max-width: $content-width;
+
+        @media (max-width: $content-width) {
+            padding: 0 15px;
+        }
     }
 
     &__line {
@@ -19,32 +25,16 @@
         margin: 0;
     }
 
-    .header-block {
-        &__title {
-            color: #F6EDD8;
+
+    &__header {
+        h2 {
+            color: $secondary-color;
             text-shadow: 1px 2px #484A4D, 3px 4px #D4CEBF;
         }
         hr {
-            background-color: #F6EDD8;
+            background-color: $secondary-color;
         }
-      
-    }
-
-    &__title {
-        font-family: 'Bazar';
-        font-weight: bold;
-        font-size: 100px;
-        text-shadow: 1px 2px #484A4D, 3px 4px #D4CEBF;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    &__subtitle {      
-        text-transform: uppercase;
-        font-family: 'Oswald';     
-        font-size: 18px;     
-        text-align: center;
-    }
+    } 
 
     &__form {      
        max-width: 535px;
@@ -52,8 +42,7 @@
        font-family: 'Roboto Slab';
        font-size: 18px;
 
-       margin: auto;
-       padding: 40px 0;
+       margin: 15px auto 40px auto;       
     }
 
     &__input { 
@@ -91,8 +80,8 @@
         font-family: 'Roboto Slab';
         font-weight: bold;
 
-        background-color: #FCFAF7;
-        color: #383A3C;
+        background-color: $light-shadow-color;
+        color: $main-color;
         
         border: none;
     }
@@ -105,17 +94,19 @@
     }
 
     &__social-link {       
-        height: 90px;
-        width: 90px;
-        padding: 8px;
+        max-height: 90px;
+        max-width: 90px;
+        width: 100%;
+        height: 100%;;
+        margin: 10px 5px;
     }
 
     &__social-links {
        display: flex;
        max-width: 535px;
        width: 100%;
-       margin: auto;
-       justify-content: space-around;
+       margin: 0 auto 40px auto;
+       justify-content: center;     
     }
 
     &__underline { 
@@ -125,6 +116,6 @@
         width: 50px;
         height: 2px;
 
-        background-color: #F6EDD8;
+        background-color: $secondary-color;
     }
 }

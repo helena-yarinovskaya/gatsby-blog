@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Image from './image'
-import HeaderBlock from './header-block'
-import Post from './post'
+import React from 'react';
+import PropTypes from 'prop-types';
+import HeaderBlock from './shared/header-block';
+import ExpandButton from './shared/expand-button';
+import Post from './post';
 
 const posts = [
   {
@@ -19,7 +19,7 @@ const posts = [
   {
     image: 'https://images.pexels.com/photos/617278/pexels-photo-617278.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
     date: 'JULY 28, 2014',
-    tags: ['fun', 'travel', 'trends', 'web design'], //JULY 28, 2014 // ADMIN //
+    tags: ['fun', 'travel', 'trends', 'web design'],
     author: 'admin',
     title: 'The lonely road',
     text: `If you’ve studied design at all, you’ve probably encountered Lorem Ipsum placeholder text at some point. 
@@ -29,7 +29,7 @@ const posts = [
   {
     image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBdhYDpDu9MnhnDW8VjLYrj2mi8FAwll5AqcYDhRiFpsLN4y0H',
     date: 'JULY 28, 2014',
-    tags: ['fun', 'trends', 'web design'], //JULY 28, 2014 // ADMIN //
+    tags: ['fun', 'trends', 'web design'],
     author: 'admin',
     title: 'I love gasoline smell',
     text: `Many of the content, and often about their precious turfpossessed selves and principles are shortcomings of seeing and colors to cover
@@ -59,35 +59,35 @@ const posts = [
         correlation. Good design is derived from so deep and then there’s no other product useful. `,
     responses: 0,
   },
-]
+];
 
-const Blog = ({posts}) => (
+const Blog = ({ posts }) => (
   <section className="blog" id="my-blog">
     <hr className="blog__line" />
-    <div className="container">
+    <div className="blog__container">
       <HeaderBlock title="My blog" subtitle="News from my house" />
 
       <div className="blog__content">
-        {posts.map(post => (
-          <Post {...post} />
-        ))}        
+        {posts.map((post, i)=> (
+          <Post key={i} {...post} />
+        ))}
       </div>
-      <div className="blog__expand">
-        <hr />
-        <div>Show all posts</div>
-      </div>
+      <ExpandButton text="Show all posts" />
     </div>
     <hr className="blog__line" />
   </section>
-)
+);
 
 Blog.propTypes = {
-  posts: PropTypes.arrayOf(PropTypes.shape({
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
       tags: PropTypes.arrayOf(PropTypes.string.isRequired),
-  })),
-}
+    })
+  ),
+};
+
 Blog.defaultProps = {
   posts: posts,
-}
+};
 
-export default Blog
+export default Blog;

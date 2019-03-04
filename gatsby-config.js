@@ -5,6 +5,17 @@ module.exports = {
     author: `@gatsbyjs`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Roboto Slab', 'Oswald'],          
+        },
+        custom: {
+          families: ['Bazar', 'Seaside Resort NF'],    
+        }
+      }
+    },    
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

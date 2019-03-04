@@ -5,7 +5,7 @@
   </a>
 </p>
 <h1 align="center">
-  Retro Langing 
+  Retro Landing 
 </h1>
 
 ## 🚀 Quick start

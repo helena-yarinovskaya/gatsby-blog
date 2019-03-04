@@ -1,13 +1,19 @@
+@import './variables.scss';
+
 .blog {
-  background: url('../images/Blog section BG.png') no-repeat;
+  background: url('../images/blog-section-bg.png') no-repeat;
   background-size: cover;
 
   padding: 15px 0;
-  color: #383a3c;
+  color: $main-color;
 
-  .container {
+  &__container {
     margin: 0 auto;
-    max-width: 1068px;
+    max-width: $content-width;
+
+    @media (max-width: $content-width) {
+      padding: 0 15px;
+    }
   }
 
   &__line {
@@ -17,39 +23,6 @@
     height: 0px;
     width: 100%;
     margin: 0;
-  }
+  }  
 
-  &__title {
-    font-family: 'Bazar';
-    font-weight: bold;
-    font-size: 100px;
-    text-shadow: 1px 2px #fcfaf7, 3px 4px #393a3a;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__subtitle {
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    font-size: 18px;
-
-    text-align: center;
-  }
-
-  &__expand {
-    font-family: 'Oswald';
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px 0 40px 0;
-    cursor: pointer;
-
-    hr {
-      width: 50px;
-      height: 2px;
-      background: #38353e;
-      margin: 0 auto;
-    }
-  }
 }

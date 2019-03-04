@@ -1,11 +1,10 @@
-import React from 'react'
-
-import Ribbon from './ribbon';
+import React from 'react';
+import Ribbon from './shared/ribbon';
 
 const MainBlock = () => (
     <section className="main-block">
         <hr className="main-block__line" />
-        <div className="container">
+        <div className="main-block__container">
             <h1>Retro</h1>
             <div className="main-block__ribbon-container">
                 <div className="main-block__ribbon-dots main-block__ribbon-dots_left">
@@ -32,6 +31,6 @@ const MainBlock = () => (
         </div>
         <hr className="main-block__line" />
     </section>
-)
+);
 
-export default MainBlock
+export default MainBlock;

@@ -1,7 +1,8 @@
-
+@import './variables.scss';
 
 .header {
-    background:  url('../images/Slider\ section\ BG.png') repeat;
+    background:  url('../images/main-section-bg.png') no-repeat;
+    background-size: cover;
     height: 130px;
     position: fixed;
     width: 100%;   
@@ -10,16 +11,15 @@
     padding-bottom: 15px;
     z-index: 2;
 
-    &__container {
-        border-bottom: 1px dashed #707070;
+    &__container {       
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.3);
         width: 100%;
         height: 100%;
     }    
 
     nav {   
         width: 100%;
-        height: 100%;
-        padding: 0 40px;
+        height: 100%;        
         font-family: 'Bazar';
         display: flex;
         flex-direction: row;
@@ -27,19 +27,41 @@
         justify-content: space-between;     
         font-size: 30px;  
         text-decoration: none;  
-        max-width: 1068px;
+        max-width: $content-width;
         margin: 0 auto;
+
+        @media (max-width: $screen-xss-width) {
+            padding: 0 20px;
+            font-size: 24px;
+        }
+    }
+
+    &__items {
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+
+        @media (max-width: $screen-xss-width) {
+            flex-direction: column;
+            align-items: center;
+            height: 100%;
+        }
+          
     }
    
     &__item {       
         cursor: pointer;
         text-decoration: none;
-        color:#F6EDD8;
+        color: $secondary-color;
     }        
     
     &__logo {
         width: 160px;
         height: 160px;    
-        margin: 45px 0 0 0;
+        margin: 45px 15px 0 15px;
+
+        @media (max-width: $screen-xs-width) {
+           display: none;
+        }
     }
 }

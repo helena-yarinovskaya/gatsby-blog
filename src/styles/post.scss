@@ -1,12 +1,18 @@
+@import './variables.scss';
+
 .post {
   display: flex;
   margin-bottom: 20px;
 
-  @media (max-width: 740px) {
+  @media (max-width: $screen-xs-width) {
     flex-direction: column;
     &__photo,
     &__info {
       width: 100%;
+    }
+
+    &__photo {
+      align-self: center;
     }
   }
 
@@ -15,34 +21,39 @@
     height: 248px;
     padding: 5px;
     border-radius: 4px;
-    background: #fbfaf6;
-    align-self: start;    
+    background: $secondary-light-color;
+
+    @media (max-width: 400px) {
+      width: 280px;
+      height: 200px;
+    }
   }
 
   &__photo-container {
     height: 100%;
     width: 100%;
-    background: #E3DFD7;
+    background: #e3dfd7;
 
     img {
-        margin: 0;
-        object-fit: cover;
-        height: 100%;
-        width: 100%;
+      margin: 0;
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
     }
   }
 
   &__info {
     width: 65%;
-    padding: 10px;
-   
+    padding: 10px 20px;    
+
     hr {
       height: 2px;
       width: 45px;
-      background: #38353e;
+      background: $secondary-dark-color;
+      margin-bottom: 10px;
     }
 
-    @media (max-width: 740px) {
+    @media (max-width: $screen-xs-width) {
       width: 100%;
     }
   }
@@ -55,24 +66,32 @@
     margin-bottom: 10px;
   }
 
-  &__additional_info {
+  &__additional-info {
     font-size: 12px;
     font-weight: bold;
     font-family: 'Oswald';
     text-transform: uppercase;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
   }
 
+  &__info-block {
+    &_left {
+      margin-right: 10px;
+    }
+  }
+
   &__text {
     font-family: 'Roboto Slab';
     font-size: 18px;
+    line-height: 1.8;
   }
 
   &__expand-btn {
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
   }
