@@ -1,8 +1,10 @@
+@import './variables.scss';
+
 .post {
   display: flex;
   margin-bottom: 20px;
 
-  @media (max-width: 740px) {
+  @media (max-width: $screen-xs-width) {
     flex-direction: column;
     &__photo,
     &__info {
@@ -15,7 +17,7 @@
     height: 248px;
     padding: 5px;
     border-radius: 4px;
-    background: #fbfaf6;
+    background: $secondary-light-color;
     align-self: start;    
   }
 
@@ -39,10 +41,10 @@
     hr {
       height: 2px;
       width: 45px;
-      background: #38353e;
+      background: $secondary-dark-color;
     }
 
-    @media (max-width: 740px) {
+    @media (max-width: $screen-xs-width) {
       width: 100%;
     }
   }
@@ -73,6 +75,7 @@
   }
 
   &__expand-btn {
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
   }

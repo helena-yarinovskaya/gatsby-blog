@@ -1,6 +1,6 @@
-import { Link } from 'gatsby'
-import React from 'react'
-import Image from './image'
+import { Link } from 'gatsby';
+import React from 'react';
+import Image from './image';
 
 const Header = () => (
   <header className="header">
@@ -16,6 +16,6 @@ const Header = () => (
       </nav>
     </div>
   </header>
-);    
-    
-export default Header
+);
+
+export default Header;

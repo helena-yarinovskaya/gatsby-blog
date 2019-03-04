@@ -1,29 +1,36 @@
+@import './variables.scss';
+
 .about {
   background: url('../images/about-background.png') no-repeat;
   background-size: cover;
-  
-  color: #383a3c;
+
+  color: $main-color;
   padding: 15px 0;
 
-  .container {
+  &__container {
     margin: 0 auto;
-    max-width: 1068px;
+    max-width: $content-width;
+
+    @media (max-width: $screen-xs-width) {
+      padding: 0 15px;
+    }
+
   }
 
   &__line {
-    border-top: 1px dashed rgba(0,0,0,0.2);
-    border-bottom: 1px dashed rgba(255,255,255,0.2);
+    border-top: 1px dashed rgba(0, 0, 0, 0.2);
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
     background: transparent;
     height: 0px;
     width: 100%;
-    margin: 0;   
+    margin: 0;
   }
 
   &__title {
     font-family: 'Bazar';
     font-weight: bold;
     font-size: 100px;
-    text-shadow: 1px 2px #fcfaf7, 3px 4px #393a3a;
+    text-shadow: 1px 2px $light-shadow-color, 3px 4px $dark-shadow-color;
     text-align: center;
   }
 
@@ -41,10 +48,9 @@
     font-family: 'Roboto Slab', sans-serif;
     font-size: 15px;
     line-height: 1.6;
-    
 
-    @media (max-width: 740px) {
-      flex-direction: column;   
+    @media (max-width: $screen-xs-width) {
+      flex-direction: column;
     }
   }
 
@@ -52,12 +58,12 @@
     padding: 0 10px;
     width: 25%;
 
-    @media (max-width: 740px) {     
+    @media (max-width: $screen-xs-width) {
       width: 100%;
     }
 
     hr {
-      background: #383a3c;
+      background: $main-color;
       height: 3px;
       width: 45px;
       border: 0;
@@ -98,7 +104,7 @@
       border-bottom: 1px dotted;
       text-decoration: none;
       cursor: pointer;
-      color: #383a3c;
+      color: $main-color;
     }
   }
 }

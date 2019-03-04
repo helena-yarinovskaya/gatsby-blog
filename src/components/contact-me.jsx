@@ -1,10 +1,9 @@
-import React from 'react'
-import { graphql } from 'gatsby'
+import React from 'react';
 
-import Image from './image'
-import HeaderBlock from './header-block'
+import Image from './image';
+import HeaderBlock from './header-block';
 
-const ContactMe = (props) => {
+const ContactMe = () => {
   return (
     <section className="contact-me" id="contact-me">
       <hr className="contact-me__line" />
@@ -16,48 +15,44 @@ const ContactMe = (props) => {
             <input className="contact-me__input" name="email" type="email" placeholder="Email address" />
             <input className="contact-me__input" name="subject" type="text" placeholder="Subject" />
             <textarea className="contact-me__textarea" placeholder="Your message" />
-            <button type="submit" className="contact-me__form-button" >Send Message</button>
+            <button type="submit" className="contact-me__form-button">
+              Send Message
+            </button>
           </form>
           <div className="contact-me__social-title">I am social</div>
           <hr className="contact-me__underline" />
           <div className="contact-me__social-links">
-
             <div className="contact-me__social-link">
-            <a href="#" >
+              <a href="#">
                 <Image className="contact-me__social-icon" file="twitter.png" alt="Twitter" />
               </a>
             </div>
             <div className="contact-me__social-link">
-            <a href="#" >
+              <a href="#">
                 <Image className="contact-me__social-icon" file="facebook.png" alt="Facebook" />
               </a>
             </div>
             <div className="contact-me__social-link">
-              <a href="#" >
+              <a href="#">
                 <Image className="contact-me__social-icon" file="gplus.png" alt="Google" />
               </a>
-
             </div>
             <div className="contact-me__social-link">
-            <a href="#" >
+              <a href="#">
                 <Image className="contact-me__social-icon" file="pinterest.png" alt="Pinterest" />
               </a>
-
             </div>
             <div className="contact-me__social-link">
-            <a href="#" >
+              <a href="#">
                 <Image file="linkedin.png" alt="LinkedIn" />
               </a>
             </div>
           </div>
-
-
         </div>
       </div>
       <hr className="contact-me__line" />
     </section>
-  )
-}
+  );
+};
 
-export default ContactMe
-
+export default ContactMe;

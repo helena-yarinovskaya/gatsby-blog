@@ -1,8 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Image from './image'
-import HeaderBlock from './header-block'
-import Post from './post'
+import React from 'react';
+import PropTypes from 'prop-types';
+import HeaderBlock from './header-block';
+import Post from './post';
 
 const posts = [
   {
@@ -59,18 +58,18 @@ const posts = [
         correlation. Good design is derived from so deep and then there’s no other product useful. `,
     responses: 0,
   },
-]
+];
 
-const Blog = ({posts}) => (
+const Blog = ({ posts }) => (
   <section className="blog" id="my-blog">
     <hr className="blog__line" />
-    <div className="container">
+    <div className="blog__container">
       <HeaderBlock title="My blog" subtitle="News from my house" />
 
       <div className="blog__content">
         {posts.map(post => (
           <Post {...post} />
-        ))}        
+        ))}
       </div>
       <div className="blog__expand">
         <hr />
@@ -79,15 +78,18 @@ const Blog = ({posts}) => (
     </div>
     <hr className="blog__line" />
   </section>
-)
+);
 
 Blog.propTypes = {
-  posts: PropTypes.arrayOf(PropTypes.shape({
+  posts: PropTypes.arrayOf(
+    PropTypes.shape({
       tags: PropTypes.arrayOf(PropTypes.string.isRequired),
-  })),
-}
+    })
+  ),
+};
+
 Blog.defaultProps = {
   posts: posts,
-}
+};
 
-export default Blog
+export default Blog;
