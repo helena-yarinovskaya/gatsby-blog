@@ -75,7 +75,7 @@ const Portfolio = ({ tags }) => (
                 </div>
                 <div className="portfolio__image-info">
                   <span className="portfolio__icon">
-                    <Image file="photo.png" alt="" />
+                    <Image file={item.icon} alt="" />
                   </span>
                 </div>
                 <p className="portfolio__label">{item.label}</p>

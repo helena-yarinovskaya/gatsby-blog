@@ -1,10 +1,13 @@
 {
   "name": "gatsby-starter-default",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Retro Landing",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Helen Yarinovskaya",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.15",
+    "@fortawesome/free-solid-svg-icons": "^5.7.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "classnames": "^2.2.6",
     "gatsby": "^2.1.17",
     "gatsby-image": "^2.0.29",
@@ -19,9 +22,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "react-helmet": "^5.2.0",
-    "react-responsive-carousel": "^3.1.47",
-    "react-slick": "^0.23.2"
+    "react-helmet": "^5.2.0"
   },
   "devDependencies": {
     "gatsby-plugin-sass": "^2.0.10",
@@ -41,9 +42,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/helena-yarinovskaya/gatsby-blog"
   }
 }
