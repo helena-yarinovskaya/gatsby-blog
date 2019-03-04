@@ -1,6 +1,5 @@
 import React from 'react';
-
-import Ribbon from './ribbon';
+import Ribbon from './shared/ribbon';
 
 const MainBlock = () => (
     <section className="main-block">

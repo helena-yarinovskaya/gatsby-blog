@@ -1,7 +1,7 @@
 import React from 'react';
 
 import Image from './image';
-import HeaderBlock from './header-block';
+import HeaderBlock from './shared/header-block';
 
 const AboutBlock = () => (
   <section className="about" id="about-me">

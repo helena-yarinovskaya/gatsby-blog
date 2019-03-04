@@ -40,11 +40,11 @@ class Post extends React.Component {
         </div>
         <div className="post__info">
           <div className="post__title">{title}</div>
-          <div className="post__additional_info">
-            <div>
+          <div className="post__additional-info">
+            <div className="post__info-block post__info-block_left">
               {date} // {author} // {formatTags(tags)}
             </div>
-            <div>{formatResponces(responses)}</div>
+            <div className="post__info-block">{formatResponces(responses)}</div>
           </div>
           <hr />
           <div className="post__text">

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import HeaderBlock from './header-block';
+import HeaderBlock from './shared/header-block';
 import ExpandButton from './shared/expand-button';
 import Post from './post';
 
@@ -68,8 +68,8 @@ const Blog = ({ posts }) => (
       <HeaderBlock title="My blog" subtitle="News from my house" />
 
       <div className="blog__content">
-        {posts.map(post => (
-          <Post {...post} />
+        {posts.map((post, i)=> (
+          <Post key={i} {...post} />
         ))}
       </div>
       <ExpandButton text="Show all posts" />

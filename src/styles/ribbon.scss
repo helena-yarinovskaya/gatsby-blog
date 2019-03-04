@@ -13,7 +13,11 @@
   height: 52px;
   padding: 5px;
   margin: 0 40px 30px 40px;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);  
+
+  @media only screen and (max-width: 600px) {
+    font-size: 18px;
+  } 
 
   &__line {
     border-bottom: 1px dashed rgba(0,0,0,0.2);
@@ -48,6 +52,10 @@
   &__content {
     text-align: center;
     line-height: 40px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 
     &::before,
     &::after {

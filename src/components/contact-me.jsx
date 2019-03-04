@@ -1,13 +1,13 @@
 import React from 'react';
 
 import Image from './image';
-import HeaderBlock from './header-block';
+import HeaderBlock from './shared/header-block';
 
 const ContactMe = () => {
   return (
     <section className="contact-me" id="contact-me">
       <hr className="contact-me__line" />
-      <div className="container">
+      <div className="contact-me__container">
         <HeaderBlock title="Contact me" subtitle="I'll be glad to answer yout questions!" className="contact-me__header" />
         <div className="contact-me__content">
           <form className="contact-me__form">
@@ -15,7 +15,7 @@ const ContactMe = () => {
             <input className="contact-me__input" name="email" type="email" placeholder="Email address" />
             <input className="contact-me__input" name="subject" type="text" placeholder="Subject" />
             <textarea className="contact-me__textarea" placeholder="Your message" />
-            <button type="submit" className="contact-me__form-button">
+            <button type="submit" className="contact-me__form-button" onClick={(e)=>e.preventDefault()}>
               Send Message
             </button>
           </form>

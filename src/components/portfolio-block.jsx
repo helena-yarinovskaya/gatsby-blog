@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Image from './image';
-import HeaderBlock from './header-block';
+import HeaderBlock from './shared/header-block';
 import ExpandButton from './shared/expand-button';
 
 const tags = ['design', 'logo', 'photography', 'poster', 'resources', 'retro', 't-shirt', 'videos'];
@@ -58,8 +58,8 @@ const Portfolio = ({ tags }) => (
       <div className="portfolio__filters">
         <div className="portfolio__filter-label">Filter by</div>
         <ul>
-          {tags.map(tag => (
-            <li className="portfolio__tag">
+          {tags.map((tag, i) => (
+            <li className="portfolio__tag" key={i}>
               <span>{tag}</span>
             </li>
           ))}
@@ -67,8 +67,8 @@ const Portfolio = ({ tags }) => (
       </div>
       <div className="portfolio__photoes">
         <div className="portfolio__photoes-container">
-          {items.map(item => (
-            <div className="portfolio__photo-container">
+          {items.map((item, i) => (
+            <div className="portfolio__photo-container" key={i}>
               <div className="portfolio__photo">
                 <div className="portfolio__image">
                   <Image file={item.image} alt="" />
