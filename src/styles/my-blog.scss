@@ -23,39 +23,6 @@
     height: 0px;
     width: 100%;
     margin: 0;
-  }
+  }  
 
-  &__title {
-    font-family: 'Bazar';
-    font-weight: bold;
-    font-size: 100px;
-    text-shadow: 1px 2px $light-shadow-color, 3px 4px $dark-shadow-color;
-    text-align: center;
-    text-transform: uppercase;
-  }
-
-  &__subtitle {
-    font-family: 'Oswald';
-    text-transform: uppercase;
-    font-size: 18px;
-
-    text-align: center;
-  }
-
-  &__expand {
-    font-family: 'Oswald';
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px 0 40px 0;
-    cursor: pointer;
-
-    hr {
-      width: 50px;
-      height: 2px;
-      background: $secondary-dark-color;
-      margin: 0 auto;
-    }
-  }
 }

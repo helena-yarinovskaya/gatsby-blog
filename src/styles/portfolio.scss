@@ -31,7 +31,7 @@
     text-shadow: 1px 2px $light-shadow-color, 3px 4px $dark-shadow-color;
     text-align: center;
     text-transform: uppercase;
-  } 
+  }
 
   ul {
     list-style: circle !important;
@@ -86,7 +86,7 @@
   &__photoes-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;   
+    justify-content: space-around;
   }
 
   &__photo-container {
@@ -114,9 +114,9 @@
 
   &__image {
     width: 100%;
-    height: calc(100% - 60px);    
+    height: calc(100% - 60px);
 
-    transition: all .2s ease-in;
+    transition: all 0.2s ease-in;
 
     .gatsby-image-wrapper {
       height: 100%;
@@ -131,15 +131,15 @@
   }
 
   &__image-info {
-    position: relative;  
+    position: relative;
   }
 
   &__label {
     font-family: 'Roboto Slab';
     font-size: 14px;
     font-weight: bold;
-    margin: 30px 0 0 0;    
-    text-align: center;   
+    margin: 30px 0 0 0;
+    text-align: center;
     text-transform: uppercase;
   }
 
@@ -153,23 +153,6 @@
     left: 50%;
     transform: translateX(-50%);
     background: $secondary-light-color;
-    padding: 10px;     
-  }
-
-  &__expand {
-    font-family: 'Oswald';
-    font-size: 16px;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-    margin: 10px 0 40px 0;
-    cursor: pointer;
-
-    hr {
-      width: 50px;
-      height: 2px;
-      background: $secondary-dark-color;
-      margin: 0 auto;
-    }
+    padding: 10px;
   }
 }

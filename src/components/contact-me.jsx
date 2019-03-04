@@ -8,7 +8,7 @@ const ContactMe = () => {
     <section className="contact-me" id="contact-me">
       <hr className="contact-me__line" />
       <div className="container">
-        <HeaderBlock title="Contact me" subtitle="I'll be glad to answer yout questions!" />
+        <HeaderBlock title="Contact me" subtitle="I'll be glad to answer yout questions!" className="contact-me__header" />
         <div className="contact-me__content">
           <form className="contact-me__form">
             <input className="contact-me__input" name="name" type="text" placeholder="Name" />

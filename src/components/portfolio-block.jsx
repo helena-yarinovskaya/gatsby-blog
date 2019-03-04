@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Image from './image';
 import HeaderBlock from './header-block';
+import ExpandButton from './shared/expand-button';
 
 const tags = ['design', 'logo', 'photography', 'poster', 'resources', 'retro', 't-shirt', 'videos'];
 
@@ -82,10 +83,7 @@ const Portfolio = ({ tags }) => (
             </div>
           ))}
         </div>
-        <div className="portfolio__expand">
-          <hr />
-          <div>Browse all</div>
-        </div>
+        <ExpandButton text="Browse all" />       
       </div>
     </div>
     <hr className="portfolio__line" />

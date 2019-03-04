@@ -19,3 +19,4 @@ import "./src/styles/main-block.scss";
 import "./src/styles/ribbon.scss";
 import "./src/styles/post.scss";
 import './src/styles/fonts.scss';
+import './src/styles/expand-btn.scss';

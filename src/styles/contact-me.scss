@@ -25,32 +25,16 @@
         margin: 0;
     }
 
-    .header-block {
-        &__title {
+
+    &__header {
+        h2 {
             color: $secondary-color;
             text-shadow: 1px 2px #484A4D, 3px 4px #D4CEBF;
         }
         hr {
             background-color: $secondary-color;
         }
-      
-    }
-
-    &__title {
-        font-family: 'Bazar';
-        font-weight: bold;
-        font-size: 100px;
-        text-shadow: 1px 2px #484A4D, 3px 4px #D4CEBF;
-        text-align: center;
-        text-transform: uppercase;
-    }
-
-    &__subtitle {      
-        text-transform: uppercase;
-        font-family: 'Oswald';     
-        font-size: 18px;     
-        text-align: center;
-    }
+    } 
 
     &__form {      
        max-width: 535px;
