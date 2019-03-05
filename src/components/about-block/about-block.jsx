@@ -1,6 +1,6 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 
-import Image from '../image';
 import HeaderBlock from '../shared/header-block/header-block';
 
 import './about-block.scss';
@@ -13,9 +13,9 @@ const AboutBlock = () => (
       <div className="about__content">
         <div className="about__item">
           <div className="about__item-image">
-            <Image file="movies.png" alt="Movies" />
+            <img src={withPrefix('/images/movies.png')} file="movies.png" alt="Movies" />
           </div>
-          <h4 className="about__item-title">Movies</h4>
+          <h3 className="about__item-title">Movies</h3>
           <p className="about__item-subtitle">What I watch</p>
           <hr />
           <p className="about__item-content">
@@ -26,10 +26,9 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <Image file="music.png" alt="test" />
-            <p className="about__item-title">Music</p>
+            <img src={withPrefix('/images/music.png')} alt="Music" />
           </div>
-
+          <h3 className="about__item-title">Music</h3>
           <p className="about__item-subtitle">What I listen</p>
           <hr />
           <p className="about__item-content">
@@ -41,16 +40,16 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <Image file="clothes.png" alt="Clothes" />
+            <img src={withPrefix('/images/clothes.png')} alt="Clothes" />
           </div>
-          <h4 className="about__item-title">Clothes</h4>
+          <h3 className="about__item-title">Clothes</h3>
           <p className="about__item-subtitle">What I wear</p>
           <hr />
           <p className="about__item-content">
             Very honest approach and product. The{' '}
             <a className="about__item-content_dotted" href="#">
               other product
-            </a>{' '}
+            </a>
             that changes function like the absence of function. And frustrating that products that it's the functional
             imperative, we kept going and frustrating that we are about bringing order to be better and less complicated
             to understand.
@@ -58,9 +57,9 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <Image file="food.png" alt="Food" />
+            <img src={withPrefix('/images/food.png')} alt="Food" />
           </div>
-          <h4 className="about__item-title">Food</h4>
+          <h3 className="about__item-title">Food</h3>
           <p className="about__item-subtitle">What I eat</p>
           <hr />
           <p className="about__item-content">

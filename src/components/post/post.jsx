@@ -13,7 +13,7 @@ class Post extends React.Component {
     author: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    responces: PropTypes.number.isRequired,
+    responses: PropTypes.number.isRequired,
   };
 
   static defaultProps = {

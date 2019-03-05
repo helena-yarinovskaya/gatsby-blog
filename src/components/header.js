@@ -1,6 +1,6 @@
 import { Link } from 'gatsby';
 import React from 'react';
-import Image from './image';
+import {withPrefix} from 'gatsby';
 
 const Header = () => (
   <header className="header">
@@ -10,7 +10,7 @@ const Header = () => (
         <Link className="header__item" to="#about-me">ABOUT ME</Link>
         <Link className="header__item" to="#portfolio">PORTFOLIO</Link></div>   
         <Link to="/" className="header__logo">
-          <Image file="logo.png" />
+          <img src={withPrefix('/images/logo.png')} alt="Logo" />
         </Link>
         <div className="header__items">
         <Link className="header__item" to="#my-blog">MY BLOG</Link>
