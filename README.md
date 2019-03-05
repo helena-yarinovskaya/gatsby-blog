@@ -12,6 +12,8 @@
 npm run develop
 ## 💫 Deploy
 
+https://elastic-goldberg-151a63.netlify.com/
+
 [![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
