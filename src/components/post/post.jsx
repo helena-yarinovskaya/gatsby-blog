@@ -41,7 +41,7 @@ class Post extends React.Component {
           <div className="post__photo-container">{image && <img src={image} alt="" />}</div>
         </div>
         <div className="post__info">
-          <div className="post__title">{title}</div>
+          <h3 className="post__title">{title}</h3>
           <div className="post__additional-info">
             <div className="post__info-block post__info-block_left">
               {date} // {author} // {formatTags(tags)}

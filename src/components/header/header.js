@@ -2,6 +2,8 @@ import { Link } from 'gatsby';
 import React from 'react';
 import {withPrefix} from 'gatsby';
 
+import './header.scss';
+
 const Header = () => (
   <header className="header">
     <div className="header__container">
