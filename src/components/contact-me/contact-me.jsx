@@ -1,13 +1,15 @@
 import React from 'react';
 import { withPrefix } from 'gatsby';
 
+import Anchor from '../shared/hidden-anchor/hidden-anchor';
 import HeaderBlock from '../shared/header-block/header-block';
 
 import './contact-me.scss';
 
 const ContactMe = () => {
   return (
-    <section className="contact-me" id="contact-me">
+    <section className="contact-me" >
+      <Anchor id="contact-me" />
       <hr className="contact-me__line" />
       <div className="contact-me__container">
         <HeaderBlock

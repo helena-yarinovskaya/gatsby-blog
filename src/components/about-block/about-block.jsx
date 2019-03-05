@@ -1,12 +1,14 @@
 import React from 'react';
 import { withPrefix } from 'gatsby';
 
+import Anchor from '../shared/hidden-anchor/hidden-anchor';
 import HeaderBlock from '../shared/header-block/header-block';
 
 import './about-block.scss';
 
 const AboutBlock = () => (
-  <section className="about" id="about-me">
+  <section className="about">
+    <Anchor id="about-me" />
     <hr className="about__line" />
     <div className="about__container">
       <HeaderBlock title="ABOUT ME" subtitle="I am a graphic designer from Baltimore" />

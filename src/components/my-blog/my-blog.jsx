@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import Anchor from '../shared/hidden-anchor/hidden-anchor';
 import HeaderBlock from '../shared/header-block/header-block';
 import ExpandButton from '../shared/expand-button/expand-button';
 import Post from '../post/post';
@@ -65,8 +66,9 @@ const posts = [
 ];
 
 const Blog = ({ posts }) => (
-  <section className="blog" id="my-blog">
+  <section className="blog" >
     <hr className="blog__line" />
+    <Anchor id="my-blog" />
     <div className="blog__container">
       <HeaderBlock title="My blog" subtitle="News from my house" />
 

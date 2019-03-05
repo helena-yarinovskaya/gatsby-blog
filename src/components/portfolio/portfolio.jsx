@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby';
 
-import Image from '../image';
+import Anchor from '../shared/hidden-anchor/hidden-anchor';
 import HeaderBlock from '../shared/header-block/header-block';
 import ExpandButton from '../shared/expand-button/expand-button';
 
@@ -54,8 +54,9 @@ const items = [
 ];
 
 const Portfolio = ({ tags }) => (
-  <section className="portfolio" id="portfolio">
+  <section className="portfolio">
     <hr className="portfolio__line" />
+    <Anchor id="portfolio" />
     <div className="portfolio__container">
       <HeaderBlock title="Portfolio" subtitle="SIMPLICITY IS THE ULTIMATE SOPHISTICATION" />
 
