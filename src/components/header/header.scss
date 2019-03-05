@@ -1,7 +1,7 @@
-@import '../styles/variables.scss';
+@import '../../styles/variables.scss';
 
 .header {
-    background:  url('../images/main-section-bg.png') no-repeat;
+    background: url('/images/backgrounds/main-section-bg.png') no-repeat;
     background-size: cover;
     height: 130px;
     position: fixed;
@@ -17,7 +17,7 @@
         height: 100%;
     }    
 
-    nav {   
+    &__menu {   
         width: 100%;
         height: 100%;        
         font-family: 'Bazar';

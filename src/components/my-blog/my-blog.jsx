@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import HeaderBlock from '../shared/header-block/header-block';
-import ExpandButton from '../shared/expand-button/expand-button';
-import Post from '../post/post';
+import Anchor from 'src/components/shared/hidden-anchor/hidden-anchor';
+import HeaderBlock from  'src/components/shared/header-block/header-block';
+import ExpandButton from 'src/components/shared/expand-button/expand-button';
+import Post from 'src/components/post/post';
 
 import './my-blog.scss';
 
@@ -65,14 +66,15 @@ const posts = [
 ];
 
 const Blog = ({ posts }) => (
-  <section className="blog" id="my-blog">
+  <section className="blog" >
     <hr className="blog__line" />
+    <Anchor id="my-blog" />
     <div className="blog__container">
       <HeaderBlock title="My blog" subtitle="News from my house" />
 
       <div className="blog__content">
         {posts.map((post, i) => (
-          <Post key={i} {...post} />
+          <Post key={`key${i}`} {...post} />
         ))}
       </div>
       <ExpandButton text="Show all posts" />

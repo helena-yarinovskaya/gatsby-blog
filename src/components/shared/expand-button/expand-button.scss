@@ -9,7 +9,7 @@
   margin: 20px 0 40px 0;
   cursor: pointer;
 
-  hr {
+  &__line {
     width: 50px;
     height: 2px;
     background: $secondary-dark-color;

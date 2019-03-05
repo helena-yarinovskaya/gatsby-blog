@@ -1,9 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withPrefix } from 'gatsby';
 
-import Image from '../image';
-import HeaderBlock from '../shared/header-block/header-block';
-import ExpandButton from '../shared/expand-button/expand-button';
+import Anchor from 'src/components/shared/hidden-anchor/hidden-anchor';
+import HeaderBlock from  'src/components/shared/header-block/header-block';
+import ExpandButton from 'src/components/shared/expand-button/expand-button';
 
 import './portfolio.scss';
 
@@ -53,32 +54,33 @@ const items = [
 ];
 
 const Portfolio = ({ tags }) => (
-  <section className="portfolio" id="portfolio">
+  <section className="portfolio">
     <hr className="portfolio__line" />
+    <Anchor id="portfolio" />
     <div className="portfolio__container">
       <HeaderBlock title="Portfolio" subtitle="SIMPLICITY IS THE ULTIMATE SOPHISTICATION" />
 
       <div className="portfolio__filters">
         <div className="portfolio__filter-label">Filter by</div>
-        <ul>
+        <ul className="portfolio__filter-list">
           {tags.map((tag, i) => (
-            <li className="portfolio__tag" key={i}>
-              <span>{tag}</span>
+            <li className="portfolio__tag" key={`key${i}`}>
+              <span className="portfolio__tag-label">{tag}</span>
             </li>
           ))}
         </ul>
       </div>
-      <div className="portfolio__photoes">
-        <div className="portfolio__photoes-container">
+      <div className="portfolio__photos">
+        <div className="portfolio__photos-container">
           {items.map((item, i) => (
-            <div className="portfolio__photo-container" key={i}>
+            <div className="portfolio__photo-container" key={`key${i}`}>
               <div className="portfolio__photo">
-                <div className="portfolio__image">
-                  <Image file={item.image} alt="" />
+                <div className="portfolio__image-container">
+                  <img className="portfolio__image" src={withPrefix(`/images/${item.image}`)} alt="" />
                 </div>
                 <div className="portfolio__image-info">
                   <span className="portfolio__icon">
-                    <Image file={item.icon} alt="" />
+                    <img className="portfolio__icon-image" src={withPrefix(`/images/portfolio-icons/${item.icon}`)} alt="Icon" />
                   </span>
                 </div>
                 <p className="portfolio__label">{item.label}</p>

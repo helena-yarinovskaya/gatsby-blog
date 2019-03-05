@@ -64,9 +64,9 @@ class Slider extends React.Component {
               className={classNames('slider__slide', {
                 slider__slide_hidden: current !== i,
               })}
-              key={i}
+              key={`key${i}`}
             >
-              <img src={slide.image} alt="" />
+              <img className="slider__image" src={slide.image} alt="" />
             </div>
           ))}
 

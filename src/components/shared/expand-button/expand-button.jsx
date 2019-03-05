@@ -6,7 +6,7 @@ import './expand-button.scss';
 
 const ExpandButton = ({ text, className, onClick }) => (
   <div className={classNames('expand-btn', className)}>
-    <hr />
+    <hr className="expand-btn__line" />
     <div onClick={onClick}>{text}</div>
   </div>
 );

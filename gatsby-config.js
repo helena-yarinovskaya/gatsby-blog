@@ -6,22 +6,28 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: `${__dirname}/src`,       
+      }
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto Slab', 'Oswald'],          
+          families: ['Roboto Slab', 'Oswald'],
         },
         custom: {
-          families: ['Bazar', 'Seaside Resort NF'],    
-        }
-      }
-    },    
+          families: ['Bazar', 'Seaside Resort NF'],
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/images`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -35,7 +41,7 @@ module.exports = {
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `${__dirname}/static/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
@@ -43,4 +49,4 @@ module.exports = {
     // 'gatsby-plugin-offline',
     `gatsby-plugin-sass`,
   ],
-}
+};

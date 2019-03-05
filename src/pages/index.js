@@ -1,12 +1,12 @@
 import React from 'react';
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import AboutBlock from '../components/about-block/about-block';
-import ContactMe from '../components/contact-me/contact-me';
-import Portfolio from '../components/portfolio/portfolio';
-import Blog from '../components/my-blog/my-blog';
-import MainBlock from '../components/main-block/main-block';
+import Layout from 'src/components/layout/layout';
+import SEO from 'src/components/seo';
+import AboutBlock from 'src/components/about-block/about-block';
+import ContactMe from 'src/components/contact-me/contact-me';
+import Portfolio from 'src/components/portfolio/portfolio';
+import Blog from 'src/components/my-blog/my-blog';
+import MainBlock from 'src/components/main-block/main-block';
 
 const IndexPage = () => (
   <Layout>

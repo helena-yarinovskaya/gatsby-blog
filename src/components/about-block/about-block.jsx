@@ -1,23 +1,25 @@
 import React from 'react';
+import { withPrefix } from 'gatsby';
 
-import Image from '../image';
-import HeaderBlock from '../shared/header-block/header-block';
+import Anchor from 'src/components/shared/hidden-anchor/hidden-anchor';
+import HeaderBlock from 'src/components/shared/header-block/header-block';
 
 import './about-block.scss';
 
 const AboutBlock = () => (
-  <section className="about" id="about-me">
+  <section className="about">
+    <Anchor id="about-me" />
     <hr className="about__line" />
     <div className="about__container">
       <HeaderBlock title="ABOUT ME" subtitle="I am a graphic designer from Baltimore" />
       <div className="about__content">
         <div className="about__item">
           <div className="about__item-image">
-            <Image file="movies.png" alt="Movies" />
+            <img src={withPrefix('/images/about-icons/movies.png')} file="movies.png" alt="Movies" />
           </div>
-          <h4 className="about__item-title">Movies</h4>
+          <h3 className="about__item-title">Movies</h3>
           <p className="about__item-subtitle">What I watch</p>
-          <hr />
+          <hr className="about__item-line"/>
           <p className="about__item-content">
             Clutter is honest! I do believe that has to the users <strong>selfexpression</strong>. Care. Things which is
             a projector operating system such formats are deep and profound and meaningful. It's the traditions of data.
@@ -26,12 +28,11 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <Image file="music.png" alt="test" />
-            <p className="about__item-title">Music</p>
+            <img src={withPrefix('/images/about-icons/music.png')} alt="Music" />
           </div>
-
+          <h3 className="about__item-title">Music</h3>
           <p className="about__item-subtitle">What I listen</p>
-          <hr />
+          <hr className="about__item-line"/>
           <p className="about__item-content">
             Good design. The content, you'll love <strong>powerpoint should be different</strong>. It's about design is
             that part? Good design is making something looks. And aesthetic. And colour defines your interface. That
@@ -41,16 +42,16 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <Image file="clothes.png" alt="Clothes" />
+            <img src={withPrefix('/images/about-icons/clothes.png')} alt="Clothes" />
           </div>
-          <h4 className="about__item-title">Clothes</h4>
+          <h3 className="about__item-title">Clothes</h3>
           <p className="about__item-subtitle">What I wear</p>
-          <hr />
+          <hr className="about__item-line"/>
           <p className="about__item-content">
             Very honest approach and product. The{' '}
             <a className="about__item-content_dotted" href="#">
               other product
-            </a>{' '}
+            </a>
             that changes function like the absence of function. And frustrating that products that it's the functional
             imperative, we kept going and frustrating that we are about bringing order to be better and less complicated
             to understand.
@@ -58,11 +59,11 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <Image file="food.png" alt="Food" />
+            <img src={withPrefix('/images/about-icons/food.png')} alt="Food" />
           </div>
-          <h4 className="about__item-title">Food</h4>
+          <h3 className="about__item-title">Food</h3>
           <p className="about__item-subtitle">What I eat</p>
-          <hr />
+          <hr className="about__item-line"/>
           <p className="about__item-content">
             Simplicity. Its context. From so many different levels. There's real simplicity is. Designing and place of
             the objects we're surrounded by seem trivial. There's <strong>no rational alternative</strong>. I think

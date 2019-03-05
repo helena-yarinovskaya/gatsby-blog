@@ -1,11 +1,13 @@
 @import '../../styles/variables.scss';
 
 .about {
-  background: url('../../images/about-background.png') no-repeat;
+  background: url('/images/backgrounds/about-background.png') no-repeat;
   background-size: cover;
 
   color: $main-color;
   padding: 15px 0;
+
+  position: relative;
 
   &__container {
     margin: 0 auto;
@@ -14,7 +16,6 @@
     @media (max-width: $content-width) {
       padding: 0 15px;
     }
-
   }
 
   &__line {
@@ -44,14 +45,14 @@
     @media (max-width: $screen-xs-width) {
       width: 100%;
     }
+  }
 
-    hr {
-      background: $main-color;
-      height: 3px;
-      width: 45px;
-      border: 0;
-      margin: 0 auto;
-    }
+  &__item-line {
+    background: $main-color;
+    height: 3px;
+    width: 45px;
+    border: 0;
+    margin: 0 auto;
   }
 
   &__item-title,

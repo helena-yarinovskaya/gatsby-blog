@@ -13,7 +13,7 @@ class Post extends React.Component {
     author: PropTypes.string.isRequired,
     date: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
-    responces: PropTypes.number.isRequired,
+    responses: PropTypes.number.isRequired,
   };
 
   static defaultProps = {
@@ -38,17 +38,17 @@ class Post extends React.Component {
     return (
       <div className="post">
         <div className="post__photo">
-          <div className="post__photo-container">{image && <img src={image} alt="" />}</div>
+          <div className="post__photo-container">{image && <img className="post__image" src={image} alt="" />}</div>
         </div>
         <div className="post__info">
-          <div className="post__title">{title}</div>
+          <h3 className="post__title">{title}</h3>
           <div className="post__additional-info">
             <div className="post__info-block post__info-block_left">
               {date} // {author} // {formatTags(tags)}
             </div>
             <div className="post__info-block">{formatResponces(responses)}</div>
           </div>
-          <hr />
+          <hr className="post__line" />
           <div className="post__text">
             {text}
             {expanded && <span className="post__hidden-text">{text}</span>}

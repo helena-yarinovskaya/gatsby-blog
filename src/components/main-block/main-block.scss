@@ -1,19 +1,19 @@
 @import '../../styles/variables.scss';
 
 .main-block {
-  background: url('../../images/main-section-bg.png') no-repeat;
+  background: url('/images/backgrounds/main-section-bg.png') no-repeat;
   background-size: cover;
   padding: 15px 0;
   margin-top: 130px;
   color: $secondary-color;
 
-  &__container {  
-      margin: 0 auto;
-      max-width: $content-width;  
+  &__container {
+    margin: 0 auto;
+    max-width: $content-width;
 
-      @media (max-width: $content-width) {
-        padding: 0 15px;
-      }
+    @media (max-width: $content-width) {
+      padding: 0 15px;
+    }
   }
 
   &__line {
@@ -23,9 +23,9 @@
     height: 0px;
     width: 100%;
     margin: 0;
-  } 
+  }
 
-  h1 {
+  &__title {
     text-align: center;
     font-size: 124px;
     font-family: 'Seaside Resort NF';
@@ -43,8 +43,8 @@
     line-height: 34px;
     color: #f7ebd8;
     text-align: center;
-    text-transform: uppercase;    
-    margin-bottom: 15px;   
+    text-transform: uppercase;
+    margin-bottom: 15px;
 
     &_main {
       font-size: 36px;
@@ -57,7 +57,7 @@
       &_main {
         font-size: 20px;
       }
-    } 
+    }
   }
 
   &__ribbon-container {
@@ -65,6 +65,7 @@
     position: relative;
     display: flex;
     justify-content: center;
+    margin-bottom: 50px;
   }
 
   &__ribbon-dots {
@@ -76,24 +77,24 @@
 
     @media only screen and (max-width: 600px) {
       display: none;
-    }    
+    }
 
     &_left {
-        margin-right: 5px;     
+      margin-right: 5px;
     }
     &_right {
-        margin-left: 5px;       
+      margin-left: 5px;
     }
+  }
 
-    span {
-      display: block;
-      padding: 0px;
-      height: 5px;
-      width: 5px;
-      content: '';
-      border-radius: 50%;
-      background-color: $ribbon-color;
-      box-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.6);
-    }
+  &__ribbon-dot {
+    display: block;
+    padding: 0px;
+    height: 5px;
+    width: 5px;
+    content: '';
+    border-radius: 50%;
+    background-color: $ribbon-color;
+    box-shadow: 0.0625rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.6);
   }
 }
