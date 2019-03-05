@@ -38,7 +38,7 @@ class Post extends React.Component {
     return (
       <div className="post">
         <div className="post__photo">
-          <div className="post__photo-container">{image && <img src={image} alt="" />}</div>
+          <div className="post__photo-container">{image && <img className="post__image" src={image} alt="" />}</div>
         </div>
         <div className="post__info">
           <h3 className="post__title">{title}</h3>
@@ -48,7 +48,7 @@ class Post extends React.Component {
             </div>
             <div className="post__info-block">{formatResponces(responses)}</div>
           </div>
-          <hr />
+          <hr className="post__line" />
           <div className="post__text">
             {text}
             {expanded && <span className="post__hidden-text">{text}</span>}

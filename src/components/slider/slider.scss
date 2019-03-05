@@ -1,6 +1,6 @@
 @import '../../styles/variables.scss';
 
-.slider {   
+.slider {
   max-width: 1068px;
   width: 100%;
 
@@ -26,61 +26,61 @@
     &_hidden {
       opacity: 0;
     }
+  }
 
-    img {
-      margin: 0;
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-    }
+  &__image {
+    margin: 0;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
   }
 
   &__arrow {
     position: absolute;
     display: flex;
-    align-items: center;   
-    color: rgba(0,0,0,0.2);
+    align-items: center;
+    color: rgba(0, 0, 0, 0.2);
 
     height: 56px;
-    width: 28px;   
+    width: 28px;
 
-    background-color: #FDF9F6; 
+    background-color: #fdf9f6;
 
-    cursor: pointer;  
+    cursor: pointer;
 
     top: 50%;
-    transform: translateY(-50%);    
+    transform: translateY(-50%);
 
     &:hover {
-        color: $main-color;        
+      color: $main-color;
     }
 
-    &_left {     
-        justify-content: flex-end; 
-        border-bottom-left-radius: 56px;
-        border-top-left-radius: 56px;
-        right: -5px;
+    &_left {
+      justify-content: flex-end;
+      border-bottom-left-radius: 56px;
+      border-top-left-radius: 56px;
+      right: -5px;
     }
 
-    &_right { 
-        justify-content: flex-start; 
-        border-bottom-right-radius: 56px;
-        border-top-right-radius: 56px;      
-        right: calc(100% - 23px);
+    &_right {
+      justify-content: flex-start;
+      border-bottom-right-radius: 56px;
+      border-top-right-radius: 56px;
+      right: calc(100% - 23px);
     }
   }
 
   &__label {
-      font-family: 'Bazar';
-      font-size: 24px;
-      font-weight: bold;
-      color: $main-color;     
-      margin: 20px;
-      text-align: center;
+    font-family: 'Bazar';
+    font-size: 24px;
+    font-weight: bold;
+    color: $main-color;
+    margin: 20px;
+    text-align: center;
 
-      @media (max-width: $screen-xs-width) {
-        font-size: 16px;
-        margin: 10px;
-      }
+    @media (max-width: $screen-xs-width) {
+      font-size: 16px;
+      margin: 10px;
+    }
   }
 }

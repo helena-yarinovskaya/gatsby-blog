@@ -14,7 +14,7 @@ const ContactMe = () => {
       <div className="contact-me__container">
         <HeaderBlock
           title="Contact me"
-          subtitle="I'll be glad to answer yout questions!"
+          subtitle="I'll be glad to answer your questions!"
           className="contact-me__header"
         />
         <div className="contact-me__content">

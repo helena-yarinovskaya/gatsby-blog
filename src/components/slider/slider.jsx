@@ -66,7 +66,7 @@ class Slider extends React.Component {
               })}
               key={`key${i}`}
             >
-              <img src={slide.image} alt="" />
+              <img className="slider__image" src={slide.image} alt="" />
             </div>
           ))}
 

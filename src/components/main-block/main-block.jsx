@@ -9,22 +9,22 @@ const MainBlock = () => (
   <section className="main-block">
     <hr className="main-block__line" />
     <div className="main-block__container">
-      <h1>Retro</h1>
+      <h1 className="main-block__title">Retro</h1>
       <div className="main-block__ribbon-container">
         <div className="main-block__ribbon-dots main-block__ribbon-dots_left">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
+          <span className="main-block__ribbon-dot"/>
+          <span className="main-block__ribbon-dot"/>
+          <span className="main-block__ribbon-dot"/>
+          <span className="main-block__ribbon-dot"/>
+          <span className="main-block__ribbon-dot"/>
         </div>
         <Ribbon text={'Old Style Portfolio'} />
         <div className="main-block__ribbon-dots main-block__ribbon-dots_right">
-          <span />
-          <span />
-          <span />
-          <span />
-          <span />
+          <span className="main-block__ribbon-dot"/>
+          <span className="main-block__ribbon-dot"/>
+          <span className="main-block__ribbon-dot"/>
+          <span className="main-block__ribbon-dot"/>
+          <span className="main-block__ribbon-dot"/>
         </div>
       </div>
       <Slider />

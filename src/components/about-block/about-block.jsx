@@ -19,7 +19,7 @@ const AboutBlock = () => (
           </div>
           <h3 className="about__item-title">Movies</h3>
           <p className="about__item-subtitle">What I watch</p>
-          <hr />
+          <hr className="about__item-line"/>
           <p className="about__item-content">
             Clutter is honest! I do believe that has to the users <strong>selfexpression</strong>. Care. Things which is
             a projector operating system such formats are deep and profound and meaningful. It's the traditions of data.
@@ -32,7 +32,7 @@ const AboutBlock = () => (
           </div>
           <h3 className="about__item-title">Music</h3>
           <p className="about__item-subtitle">What I listen</p>
-          <hr />
+          <hr className="about__item-line"/>
           <p className="about__item-content">
             Good design. The content, you'll love <strong>powerpoint should be different</strong>. It's about design is
             that part? Good design is making something looks. And aesthetic. And colour defines your interface. That
@@ -46,7 +46,7 @@ const AboutBlock = () => (
           </div>
           <h3 className="about__item-title">Clothes</h3>
           <p className="about__item-subtitle">What I wear</p>
-          <hr />
+          <hr className="about__item-line"/>
           <p className="about__item-content">
             Very honest approach and product. The{' '}
             <a className="about__item-content_dotted" href="#">
@@ -63,7 +63,7 @@ const AboutBlock = () => (
           </div>
           <h3 className="about__item-title">Food</h3>
           <p className="about__item-subtitle">What I eat</p>
-          <hr />
+          <hr className="about__item-line"/>
           <p className="about__item-content">
             Simplicity. Its context. From so many different levels. There's real simplicity is. Designing and place of
             the objects we're surrounded by seem trivial. There's <strong>no rational alternative</strong>. I think

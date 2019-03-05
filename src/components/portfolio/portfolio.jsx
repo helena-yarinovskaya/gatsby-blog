@@ -62,10 +62,10 @@ const Portfolio = ({ tags }) => (
 
       <div className="portfolio__filters">
         <div className="portfolio__filter-label">Filter by</div>
-        <ul>
+        <ul className="portfolio__filter-list">
           {tags.map((tag, i) => (
             <li className="portfolio__tag" key={`key${i}`}>
-              <span>{tag}</span>
+              <span className="portfolio__tag-label">{tag}</span>
             </li>
           ))}
         </ul>
@@ -75,12 +75,12 @@ const Portfolio = ({ tags }) => (
           {items.map((item, i) => (
             <div className="portfolio__photo-container" key={`key${i}`}>
               <div className="portfolio__photo">
-                <div className="portfolio__image">
-                  <img src={withPrefix(`/images/${item.image}`)} alt="" />
+                <div className="portfolio__image-container">
+                  <img className="portfolio__image" src={withPrefix(`/images/${item.image}`)} alt="" />
                 </div>
                 <div className="portfolio__image-info">
                   <span className="portfolio__icon">
-                    <img src={withPrefix(`/images/portfolio-icons/${item.icon}`)} alt="Icon" />
+                    <img className="portfolio__icon-image" src={withPrefix(`/images/portfolio-icons/${item.icon}`)} alt="Icon" />
                   </span>
                 </div>
                 <p className="portfolio__label">{item.label}</p>
