@@ -88,7 +88,7 @@
     }
   }
 
-  &__photoes-container {
+  &__photos-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -158,6 +158,13 @@
     left: 50%;
     transform: translateX(-50%);
     background: $secondary-light-color;
-    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      margin: 0;
+    }
   }
 }

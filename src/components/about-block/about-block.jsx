@@ -13,7 +13,7 @@ const AboutBlock = () => (
       <div className="about__content">
         <div className="about__item">
           <div className="about__item-image">
-            <img src={withPrefix('/images/movies.png')} file="movies.png" alt="Movies" />
+            <img src={withPrefix('/images/about-icons/movies.png')} file="movies.png" alt="Movies" />
           </div>
           <h3 className="about__item-title">Movies</h3>
           <p className="about__item-subtitle">What I watch</p>
@@ -26,7 +26,7 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <img src={withPrefix('/images/music.png')} alt="Music" />
+            <img src={withPrefix('/images/about-icons/music.png')} alt="Music" />
           </div>
           <h3 className="about__item-title">Music</h3>
           <p className="about__item-subtitle">What I listen</p>
@@ -40,7 +40,7 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <img src={withPrefix('/images/clothes.png')} alt="Clothes" />
+            <img src={withPrefix('/images/about-icons/clothes.png')} alt="Clothes" />
           </div>
           <h3 className="about__item-title">Clothes</h3>
           <p className="about__item-subtitle">What I wear</p>
@@ -57,7 +57,7 @@ const AboutBlock = () => (
         </div>
         <div className="about__item">
           <div className="about__item-image">
-            <img src={withPrefix('/images/food.png')} alt="Food" />
+            <img src={withPrefix('/images/about-icons/food.png')} alt="Food" />
           </div>
           <h3 className="about__item-title">Food</h3>
           <p className="about__item-subtitle">What I eat</p>

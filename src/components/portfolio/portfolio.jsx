@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { withPrefix } from 'gatsby';
 
 import Image from '../image';
 import HeaderBlock from '../shared/header-block/header-block';
@@ -68,17 +69,17 @@ const Portfolio = ({ tags }) => (
           ))}
         </ul>
       </div>
-      <div className="portfolio__photoes">
-        <div className="portfolio__photoes-container">
+      <div className="portfolio__photos">
+        <div className="portfolio__photos-container">
           {items.map((item, i) => (
             <div className="portfolio__photo-container" key={i}>
               <div className="portfolio__photo">
                 <div className="portfolio__image">
-                  <Image file={item.image} alt="" />
+                  <img src={withPrefix(`/images/${item.image}`)} alt="" />
                 </div>
                 <div className="portfolio__image-info">
                   <span className="portfolio__icon">
-                    <Image file={item.icon} alt="" />
+                    <img src={withPrefix(`/images/portfolio-icons/${item.icon}`)} alt="Icon" />
                   </span>
                 </div>
                 <p className="portfolio__label">{item.label}</p>
