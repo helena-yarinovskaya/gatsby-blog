@@ -1,10 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import Anchor from '../shared/hidden-anchor/hidden-anchor';
-import HeaderBlock from '../shared/header-block/header-block';
-import ExpandButton from '../shared/expand-button/expand-button';
-import Post from '../post/post';
+import Anchor from 'src/components/shared/hidden-anchor/hidden-anchor';
+import HeaderBlock from  'src/components/shared/header-block/header-block';
+import ExpandButton from 'src/components/shared/expand-button/expand-button';
+import Post from 'src/components/post/post';
 
 import './my-blog.scss';
 

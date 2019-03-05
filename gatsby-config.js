@@ -6,16 +6,22 @@ module.exports = {
   },
   plugins: [
     {
+      resolve: 'gatsby-plugin-root-import',
+      options: {
+        src: `${__dirname}/src`,       
+      }
+    },
+    {
       resolve: 'gatsby-plugin-web-font-loader',
       options: {
         google: {
-          families: ['Roboto Slab', 'Oswald'],          
+          families: ['Roboto Slab', 'Oswald'],
         },
         custom: {
-          families: ['Bazar', 'Seaside Resort NF'],    
-        }
-      }
-    },    
+          families: ['Bazar', 'Seaside Resort NF'],
+        },
+      },
+    },
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -43,4 +49,4 @@ module.exports = {
     // 'gatsby-plugin-offline',
     `gatsby-plugin-sass`,
   ],
-}
+};

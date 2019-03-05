@@ -1,8 +1,8 @@
 import React from 'react';
 import { withPrefix } from 'gatsby';
 
-import Anchor from '../shared/hidden-anchor/hidden-anchor';
-import HeaderBlock from '../shared/header-block/header-block';
+import Anchor from 'src/components/shared/hidden-anchor/hidden-anchor';
+import HeaderBlock from 'src/components/shared/header-block/header-block';
 
 import './contact-me.scss';
 

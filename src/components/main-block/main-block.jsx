@@ -1,7 +1,7 @@
 import React from 'react';
 
-import Ribbon from '../shared/ribbon/ribbon';
-import Slider from '../slider/slider';
+import Ribbon from 'src/components/shared/ribbon/ribbon';
+import Slider from 'src/components/slider/slider';
 
 import './main-block.scss';
 

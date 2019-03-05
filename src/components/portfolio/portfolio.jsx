@@ -2,9 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withPrefix } from 'gatsby';
 
-import Anchor from '../shared/hidden-anchor/hidden-anchor';
-import HeaderBlock from '../shared/header-block/header-block';
-import ExpandButton from '../shared/expand-button/expand-button';
+import Anchor from 'src/components/shared/hidden-anchor/hidden-anchor';
+import HeaderBlock from  'src/components/shared/header-block/header-block';
+import ExpandButton from 'src/components/shared/expand-button/expand-button';
 
 import './portfolio.scss';
 
