@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import HeaderBlock from './shared/header-block';
-import ExpandButton from './shared/expand-button';
-import Post from './post';
+
+import HeaderBlock from '../shared/header-block/header-block';
+import ExpandButton from '../shared/expand-button/expand-button';
+import Post from '../post/post';
+
+import './my-blog.scss';
 
 const posts = [
   {
@@ -68,7 +71,7 @@ const Blog = ({ posts }) => (
       <HeaderBlock title="My blog" subtitle="News from my house" />
 
       <div className="blog__content">
-        {posts.map((post, i)=> (
+        {posts.map((post, i) => (
           <Post key={i} {...post} />
         ))}
       </div>
