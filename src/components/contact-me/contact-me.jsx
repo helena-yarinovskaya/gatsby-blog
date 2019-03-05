@@ -1,7 +1,9 @@
 import React from 'react';
 
-import Image from './image';
-import HeaderBlock from './shared/header-block';
+import Image from '../image';
+import HeaderBlock from '../shared/header-block/header-block';
+
+import './contact-me.scss';
 
 const ContactMe = () => {
   return (

@@ -1,7 +1,7 @@
-@import './variables.scss';
+@import '../../styles/variables.scss';
 
 .about {
-  background: url('../images/about-background.png') no-repeat;
+  background: url('../../images/about-background.png') no-repeat;
   background-size: cover;
 
   color: $main-color;

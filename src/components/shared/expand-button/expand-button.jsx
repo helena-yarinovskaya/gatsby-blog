@@ -2,6 +2,8 @@ import React from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 
+import './expand-button.scss';
+
 const ExpandButton = ({ text, className, onClick }) => (
   <div className={classNames('expand-btn', className)}>
     <hr />

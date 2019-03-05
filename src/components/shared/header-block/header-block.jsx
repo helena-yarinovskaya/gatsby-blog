@@ -1,6 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
 
+import './header-block.scss';
+
 const HeaderBlock = ({ title, subtitle, className }) => (
   <div className={classNames("header-block", className)}>
     <h2 className="header-block__title">{title}</h2>

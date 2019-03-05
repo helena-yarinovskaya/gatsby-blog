@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './post.scss';
+
 const formatResponces = count => (!count ? 'No responces' : `${count} responce${count > 1 ? 's' : ''}`);
 const formatTags = tags => (tags && tags.length ? tags.join(',  ') : '');
 

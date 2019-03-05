@@ -1,8 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Image from './image';
-import HeaderBlock from './shared/header-block';
-import ExpandButton from './shared/expand-button';
+
+import Image from '../image';
+import HeaderBlock from '../shared/header-block/header-block';
+import ExpandButton from '../shared/expand-button/expand-button';
+
+import './portfolio.scss';
 
 const tags = ['design', 'logo', 'photography', 'poster', 'resources', 'retro', 't-shirt', 'videos'];
 
@@ -83,7 +86,7 @@ const Portfolio = ({ tags }) => (
             </div>
           ))}
         </div>
-        <ExpandButton text="Browse all" />       
+        <ExpandButton text="Browse all" />
       </div>
     </div>
     <hr className="portfolio__line" />
