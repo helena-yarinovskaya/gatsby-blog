@@ -1,6 +1,9 @@
 import React from 'react';
-import Ribbon from './shared/ribbon';
-import Slider from './slider';
+
+import Ribbon from '../shared/ribbon/ribbon';
+import Slider from '../slider/slider';
+
+import './main-block.scss';
 
 const MainBlock = () => (
   <section className="main-block">
@@ -24,7 +27,7 @@ const MainBlock = () => (
           <span />
         </div>
       </div>
-      <Slider />     
+      <Slider />
       <p className="main-block__message main-block__message_main">"Hello, I am John Doe </p>
       <p className="main-block__message">Welcome to Retro, my wonderful theme!"</p>
     </div>

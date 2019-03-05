@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './ribbon.scss';
+
 const Ribbon = ({ text }) => (
   <div className="ribbon">
     <hr className="ribbon__line" />
