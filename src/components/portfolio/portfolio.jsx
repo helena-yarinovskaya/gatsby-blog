@@ -64,7 +64,7 @@ const Portfolio = ({ tags }) => (
         <div className="portfolio__filter-label">Filter by</div>
         <ul>
           {tags.map((tag, i) => (
-            <li className="portfolio__tag" key={i}>
+            <li className="portfolio__tag" key={`key${i}`}>
               <span>{tag}</span>
             </li>
           ))}
@@ -73,7 +73,7 @@ const Portfolio = ({ tags }) => (
       <div className="portfolio__photos">
         <div className="portfolio__photos-container">
           {items.map((item, i) => (
-            <div className="portfolio__photo-container" key={i}>
+            <div className="portfolio__photo-container" key={`key${i}`}>
               <div className="portfolio__photo">
                 <div className="portfolio__image">
                   <img src={withPrefix(`/images/${item.image}`)} alt="" />

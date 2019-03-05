@@ -74,7 +74,7 @@ const Blog = ({ posts }) => (
 
       <div className="blog__content">
         {posts.map((post, i) => (
-          <Post key={i} {...post} />
+          <Post key={`key${i}`} {...post} />
         ))}
       </div>
       <ExpandButton text="Show all posts" />
